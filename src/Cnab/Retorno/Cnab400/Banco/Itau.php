@@ -232,6 +232,7 @@ class Itau extends AbstractRetorno implements RetornoCnab400
             ->setValorRecebido(Util::nFloat($this->rem(254, 266, $detalhe) / 100, 2, false))
             ->setValorMora(Util::nFloat($this->rem(267, 279, $detalhe) / 100, 2, false))
             ->setValorMulta(Util::nFloat($this->rem(280, 292, $detalhe) / 100, 2, false));
+            ->setNomePagador($this->rem(325, 354, $detalhe));
 
         $msgAdicional = str_split(sprintf('%08s', $this->rem(378, 385, $detalhe)), 2) + array_fill(0, 4, '');
         if ($d->hasOcorrencia('06', '07', '08', '10', '59')) {
