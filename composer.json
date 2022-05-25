@@ -1,5 +1,5 @@
 {
-    "name": "eduardokum/laravel-boleto",
+    "name": "leonardo-max/laravel-boleto",
     "description": "Biblioteca com boletos para o laravel",
     "keywords": [
         "eduardokum",
@@ -30,12 +30,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Eduardokum\\LaravelBoleto\\": "src"
+            "leonardo-max\\LaravelBoleto\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Eduardokum\\LaravelBoleto\\Tests\\": "tests"
+            "leonardo-max\\LaravelBoleto\\Tests\\": "tests"
         }
     },
     "config": {
