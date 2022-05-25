@@ -95,6 +95,10 @@ class Detalhe implements DetalheContract
     /**
      * @var string
      */
+    protected $nomePagador;
+    /**
+     * @var string
+     */
     protected $error;
 
     /**
@@ -551,6 +555,26 @@ class Detalhe implements DetalheContract
     public function setValorMulta($valorMulta)
     {
         $this->valorMulta = $valorMulta;
+
+        return $this;
+    }
+    
+    /**
+     * @return string
+     */
+    public function getNomePagador()
+    {
+        return $this->nomePagador;
+    }
+
+    /**
+     * @param string $nomePagador
+     *
+     * @return Detalhe
+     */
+    public function setNomePagador($nomePagador)
+    {
+        $this->nomePagador = $nomePagador;
 
         return $this;
     }
