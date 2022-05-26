@@ -1,10 +1,10 @@
 <?php
 
-namespace Eduardokum\LaravelBoleto\Cnab\Retorno\Cnab400;
+namespace LeonardoMax\LaravelBoleto\Cnab\Retorno\Cnab400;
 
 use Carbon\Carbon;
-use Eduardokum\LaravelBoleto\MagicTrait;
-use Eduardokum\LaravelBoleto\Contracts\Cnab\Retorno\Cnab400\Detalhe as DetalheContract;
+use LeonardoMax\LaravelBoleto\MagicTrait;
+use LeonardoMax\LaravelBoleto\Contracts\Cnab\Retorno\Cnab400\Detalhe as DetalheContract;
 
 class Detalhe implements DetalheContract
 {
@@ -558,7 +558,7 @@ class Detalhe implements DetalheContract
 
         return $this;
     }
-    
+
     /**
      * @return string
      */

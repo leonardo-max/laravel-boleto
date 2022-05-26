@@ -1,11 +1,11 @@
 <?php
-namespace Eduardokum\LaravelBoleto\Cnab\Remessa\Cnab400\Banco;
+namespace LeonardoMax\LaravelBoleto\Cnab\Remessa\Cnab400\Banco;
 
 use Carbon\Carbon;
-use Eduardokum\LaravelBoleto\Cnab\Remessa\Cnab400\AbstractRemessa;
-use Eduardokum\LaravelBoleto\Contracts\Boleto\Boleto as BoletoContract;
-use Eduardokum\LaravelBoleto\Contracts\Cnab\Remessa as RemessaContract;
-use Eduardokum\LaravelBoleto\Util;
+use LeonardoMax\LaravelBoleto\Cnab\Remessa\Cnab400\AbstractRemessa;
+use LeonardoMax\LaravelBoleto\Contracts\Boleto\Boleto as BoletoContract;
+use LeonardoMax\LaravelBoleto\Contracts\Cnab\Remessa as RemessaContract;
+use LeonardoMax\LaravelBoleto\Util;
 
 class Sicredi extends AbstractRemessa implements RemessaContract
 {

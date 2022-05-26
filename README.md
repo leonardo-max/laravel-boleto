@@ -1,12 +1,12 @@
-[![Packagist](https://img.shields.io/packagist/v/eduardokum/laravel-boleto.svg?style=flat-square)](https://github.com/eduardokum/laravel-boleto)
-[![Packagist](https://img.shields.io/packagist/dt/eduardokum/laravel-boleto.svg?style=flat-square)](https://github.com/eduardokum/laravel-boleto)
-[![Packagist](https://img.shields.io/packagist/l/eduardokum/laravel-boleto.svg?style=flat-square)](https://github.com/eduardokum/laravel-boleto)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/eduardokum/laravel-boleto/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/eduardokum/laravel-boleto/?branch=master)
-[![Build Status](https://scrutinizer-ci.com/g/eduardokum/laravel-boleto/badges/build.png?b=master)](https://scrutinizer-ci.com/g/eduardokum/laravel-boleto/build-status/master)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/eduardokum/laravel-boleto/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/eduardokum/laravel-boleto/?branch=master)
-[![Code Coverage](https://scrutinizer-ci.com/g/eduardokum/laravel-boleto/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/eduardokum/laravel-boleto/?branch=master)
-[![Build Status](https://github.com/eduardokum/laravel-boleto/workflows/build/badge.svg?branch=master)](https://github.com/eduardokum/laravel-boleto/actions)
-[![GitHub forks](https://img.shields.io/github/forks/eduardokum/laravel-boleto.svg?style=social&label=Fork)](https://github.com/eduardokum/laravel-boleto)
+[![Packagist](https://img.shields.io/packagist/v/LeonardoMax/laravel-boleto.svg?style=flat-square)](https://github.com/LeonardoMax/laravel-boleto)
+[![Packagist](https://img.shields.io/packagist/dt/LeonardoMax/laravel-boleto.svg?style=flat-square)](https://github.com/LeonardoMax/laravel-boleto)
+[![Packagist](https://img.shields.io/packagist/l/LeonardoMax/laravel-boleto.svg?style=flat-square)](https://github.com/LeonardoMax/laravel-boleto)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/LeonardoMax/laravel-boleto/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/LeonardoMax/laravel-boleto/?branch=master)
+[![Build Status](https://scrutinizer-ci.com/g/LeonardoMax/laravel-boleto/badges/build.png?b=master)](https://scrutinizer-ci.com/g/LeonardoMax/laravel-boleto/build-status/master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/LeonardoMax/laravel-boleto/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/LeonardoMax/laravel-boleto/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/LeonardoMax/laravel-boleto/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/LeonardoMax/laravel-boleto/?branch=master)
+[![Build Status](https://github.com/LeonardoMax/laravel-boleto/workflows/build/badge.svg?branch=master)](https://github.com/LeonardoMax/laravel-boleto/actions)
+[![GitHub forks](https://img.shields.io/github/forks/LeonardoMax/laravel-boleto.svg?style=social&label=Fork)](https://github.com/LeonardoMax/laravel-boleto)
 
 # Laravel Boleto
 Pacote para gerar boletos, remessas e leitura de retorno.

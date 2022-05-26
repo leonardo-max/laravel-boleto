@@ -9,6 +9,6 @@ Support for ``latest stable version of php`` only.
 
 The mailing list at GoogleGroups_. is also available for support.
 
-.. _Github: http://github.com/eduardokum/laravel-boleto/issues
+.. _Github: http://github.com/LeonardoMax/laravel-boleto/issues
 .. _Telegram: https://telegram.me/laravelBoleto
 .. _GoogleGroups: https://groups.google.com/forum/#!forum/laravel-boleto

@@ -1,10 +1,10 @@
 <?php
-namespace Eduardokum\LaravelBoleto\Cnab\Retorno\Cnab400\Banco;
+namespace LeonardoMax\LaravelBoleto\Cnab\Retorno\Cnab400\Banco;
 
-use Eduardokum\LaravelBoleto\Util;
-use Eduardokum\LaravelBoleto\Contracts\Cnab\RetornoCnab400;
-use Eduardokum\LaravelBoleto\Cnab\Retorno\Cnab400\AbstractRetorno;
-use Eduardokum\LaravelBoleto\Contracts\Boleto\Boleto as BoletoContract;
+use LeonardoMax\LaravelBoleto\Util;
+use LeonardoMax\LaravelBoleto\Contracts\Cnab\RetornoCnab400;
+use LeonardoMax\LaravelBoleto\Cnab\Retorno\Cnab400\AbstractRetorno;
+use LeonardoMax\LaravelBoleto\Contracts\Boleto\Boleto as BoletoContract;
 use Illuminate\Support\Arr;
 
 class Itau extends AbstractRetorno implements RetornoCnab400

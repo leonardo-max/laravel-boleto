@@ -1,5 +1,5 @@
 <?php
-namespace Eduardokum\LaravelBoleto;
+namespace LeonardoMax\LaravelBoleto;
 
 class CalculoDV
 {

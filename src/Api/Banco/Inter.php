@@ -1,10 +1,10 @@
 <?php
-namespace Eduardokum\LaravelBoleto\Api\Banco;
+namespace LeonardoMax\LaravelBoleto\Api\Banco;
 
 use Carbon\Carbon;
-use Eduardokum\LaravelBoleto\Api\AbstractAPI;
-use Eduardokum\LaravelBoleto\Contracts\Boleto\BoletoAPI as BoletoAPIContract;
-use Eduardokum\LaravelBoleto\Util;
+use LeonardoMax\LaravelBoleto\Api\AbstractAPI;
+use LeonardoMax\LaravelBoleto\Contracts\Boleto\BoletoAPI as BoletoAPIContract;
+use LeonardoMax\LaravelBoleto\Util;
 
 class Inter extends AbstractAPI
 {
@@ -35,9 +35,9 @@ class Inter extends AbstractAPI
      * @param BoletoAPIContract $boleto
      *
      * @return BoletoAPIContract
-     * @throws \Eduardokum\LaravelBoleto\Api\Exception\CurlException
-     * @throws \Eduardokum\LaravelBoleto\Api\Exception\HttpException
-     * @throws \Eduardokum\LaravelBoleto\Api\Exception\UnauthorizedException
+     * @throws \LeonardoMax\LaravelBoleto\Api\Exception\CurlException
+     * @throws \LeonardoMax\LaravelBoleto\Api\Exception\HttpException
+     * @throws \LeonardoMax\LaravelBoleto\Api\Exception\UnauthorizedException
      */
     public function createBoleto(BoletoAPIContract $boleto)
     {
@@ -51,9 +51,9 @@ class Inter extends AbstractAPI
      * @param array $inputedParams
      *
      * @return array
-     * @throws \Eduardokum\LaravelBoleto\Api\Exception\CurlException
-     * @throws \Eduardokum\LaravelBoleto\Api\Exception\HttpException
-     * @throws \Eduardokum\LaravelBoleto\Api\Exception\UnauthorizedException
+     * @throws \LeonardoMax\LaravelBoleto\Api\Exception\CurlException
+     * @throws \LeonardoMax\LaravelBoleto\Api\Exception\HttpException
+     * @throws \LeonardoMax\LaravelBoleto\Api\Exception\UnauthorizedException
      */
     public function retrieveList($inputedParams = [])
     {
@@ -103,9 +103,9 @@ class Inter extends AbstractAPI
      * @param $nossoNumero
      *
      * @return mixed
-     * @throws \Eduardokum\LaravelBoleto\Api\Exception\CurlException
-     * @throws \Eduardokum\LaravelBoleto\Api\Exception\HttpException
-     * @throws \Eduardokum\LaravelBoleto\Api\Exception\UnauthorizedException
+     * @throws \LeonardoMax\LaravelBoleto\Api\Exception\CurlException
+     * @throws \LeonardoMax\LaravelBoleto\Api\Exception\HttpException
+     * @throws \LeonardoMax\LaravelBoleto\Api\Exception\UnauthorizedException
      */
     public function retrieveNossoNumero($nossoNumero)
     {
@@ -119,9 +119,9 @@ class Inter extends AbstractAPI
      * @param string $motivo
      *
      * @return mixed
-     * @throws \Eduardokum\LaravelBoleto\Api\Exception\CurlException
-     * @throws \Eduardokum\LaravelBoleto\Api\Exception\HttpException
-     * @throws \Eduardokum\LaravelBoleto\Api\Exception\UnauthorizedException
+     * @throws \LeonardoMax\LaravelBoleto\Api\Exception\CurlException
+     * @throws \LeonardoMax\LaravelBoleto\Api\Exception\HttpException
+     * @throws \LeonardoMax\LaravelBoleto\Api\Exception\UnauthorizedException
      */
     public function cancelNossoNumero($nossoNumero, $motivo = 'ACERTOS')
     {
@@ -146,9 +146,9 @@ class Inter extends AbstractAPI
      * @param $nossoNumero
      *
      * @return mixed
-     * @throws \Eduardokum\LaravelBoleto\Api\Exception\CurlException
-     * @throws \Eduardokum\LaravelBoleto\Api\Exception\HttpException
-     * @throws \Eduardokum\LaravelBoleto\Api\Exception\UnauthorizedException
+     * @throws \LeonardoMax\LaravelBoleto\Api\Exception\CurlException
+     * @throws \LeonardoMax\LaravelBoleto\Api\Exception\HttpException
+     * @throws \LeonardoMax\LaravelBoleto\Api\Exception\UnauthorizedException
      */
     public function getPdfNossoNumero($nossoNumero)
     {
@@ -160,12 +160,12 @@ class Inter extends AbstractAPI
     /**
      * @param $boleto
      *
-     * @return \Eduardokum\LaravelBoleto\Boleto\Banco\Inter
+     * @return \LeonardoMax\LaravelBoleto\Boleto\Banco\Inter
      * @throws \Exception
      */
     private function arrayToBoleto($boleto)
     {
-        return \Eduardokum\LaravelBoleto\Boleto\Banco\Inter::createFromAPI($boleto, [
+        return \LeonardoMax\LaravelBoleto\Boleto\Banco\Inter::createFromAPI($boleto, [
             'conta'        => $this->getConta(),
             'beneficiario' => $this->getBeneficiario(),
         ]);

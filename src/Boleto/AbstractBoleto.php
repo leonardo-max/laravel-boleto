@@ -1,21 +1,21 @@
 <?php
 
-namespace Eduardokum\LaravelBoleto\Boleto;
+namespace LeonardoMax\LaravelBoleto\Boleto;
 
 use Carbon\Carbon;
-use Eduardokum\LaravelBoleto\Boleto\Render\Html;
-use Eduardokum\LaravelBoleto\Boleto\Render\Pdf;
-use Eduardokum\LaravelBoleto\Boleto\Render\PdfCaixa;
-use Eduardokum\LaravelBoleto\Contracts\Boleto\Boleto;
-use Eduardokum\LaravelBoleto\Contracts\Pessoa as PessoaContract;
-use Eduardokum\LaravelBoleto\Contracts\Boleto\Boleto as BoletoContract;
-use Eduardokum\LaravelBoleto\Util;
+use LeonardoMax\LaravelBoleto\Boleto\Render\Html;
+use LeonardoMax\LaravelBoleto\Boleto\Render\Pdf;
+use LeonardoMax\LaravelBoleto\Boleto\Render\PdfCaixa;
+use LeonardoMax\LaravelBoleto\Contracts\Boleto\Boleto;
+use LeonardoMax\LaravelBoleto\Contracts\Pessoa as PessoaContract;
+use LeonardoMax\LaravelBoleto\Contracts\Boleto\Boleto as BoletoContract;
+use LeonardoMax\LaravelBoleto\Util;
 use Illuminate\Support\Str;
 
 /**
  * Class AbstractBoleto
  *
- * @package Eduardokum\LaravelBoleto\Boleto
+ * @package LeonardoMax\LaravelBoleto\Boleto
  */
 abstract class AbstractBoleto implements BoletoContract
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Eduardokum\LaravelBoleto\Tests;
+namespace LeonardoMax\LaravelBoleto\Tests;
 
-use Eduardokum\LaravelBoleto\Pessoa;
-use Eduardokum\LaravelBoleto\Util;
+use LeonardoMax\LaravelBoleto\Pessoa;
+use LeonardoMax\LaravelBoleto\Util;
 use Exception;
 
 class UtilTest extends TestCase

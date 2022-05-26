@@ -1,10 +1,10 @@
 <?php
-namespace Eduardokum\LaravelBoleto\Cnab\Retorno\Cnab400\Banco;
+namespace LeonardoMax\LaravelBoleto\Cnab\Retorno\Cnab400\Banco;
 
-use Eduardokum\LaravelBoleto\Cnab\Retorno\Cnab400\AbstractRetorno;
-use Eduardokum\LaravelBoleto\Contracts\Boleto\Boleto as BoletoContract;
-use Eduardokum\LaravelBoleto\Contracts\Cnab\RetornoCnab400;
-use Eduardokum\LaravelBoleto\Util;
+use LeonardoMax\LaravelBoleto\Cnab\Retorno\Cnab400\AbstractRetorno;
+use LeonardoMax\LaravelBoleto\Contracts\Boleto\Boleto as BoletoContract;
+use LeonardoMax\LaravelBoleto\Contracts\Cnab\RetornoCnab400;
+use LeonardoMax\LaravelBoleto\Util;
 use Illuminate\Support\Arr;
 
 class Inter extends AbstractRetorno implements RetornoCnab400

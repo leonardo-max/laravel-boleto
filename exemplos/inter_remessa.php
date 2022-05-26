@@ -1,10 +1,10 @@
 <?php
 
-use Eduardokum\LaravelBoleto\Util;
+use LeonardoMax\LaravelBoleto\Util;
 
 require 'autoload.php';
 
-$beneficiario = new \Eduardokum\LaravelBoleto\Pessoa(
+$beneficiario = new \LeonardoMax\LaravelBoleto\Pessoa(
     [
         'nome' => 'ACME',
         'endereco' => 'Rua um, 123',
@@ -15,7 +15,7 @@ $beneficiario = new \Eduardokum\LaravelBoleto\Pessoa(
     ]
 );
 
-$pagador = new \Eduardokum\LaravelBoleto\Pessoa(
+$pagador = new \LeonardoMax\LaravelBoleto\Pessoa(
     [
         'nome' => 'Cliente',
         'endereco' => 'Rua um, 123',
@@ -27,7 +27,7 @@ $pagador = new \Eduardokum\LaravelBoleto\Pessoa(
     ]
 );
 
-$boleto = new Eduardokum\LaravelBoleto\Boleto\Banco\Inter(
+$boleto = new LeonardoMax\LaravelBoleto\Boleto\Banco\Inter(
     [
         'logo'            => realpath(__DIR__ . '/../logos/') . DIRECTORY_SEPARATOR . '077.png',
         'dataVencimento'  => (new \Carbon\Carbon())->addDays(),
@@ -45,7 +45,7 @@ $boleto = new Eduardokum\LaravelBoleto\Boleto\Banco\Inter(
     ]
 );
 
-$remessa = new \Eduardokum\LaravelBoleto\Cnab\Remessa\Cnab400\Banco\Inter(
+$remessa = new \LeonardoMax\LaravelBoleto\Cnab\Remessa\Cnab400\Banco\Inter(
     [
         'idRemessa'    => 1,
         'agencia'      => '0001',

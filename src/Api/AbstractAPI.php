@@ -1,10 +1,10 @@
 <?php
-namespace Eduardokum\LaravelBoleto\Api;
+namespace LeonardoMax\LaravelBoleto\Api;
 
-use Eduardokum\LaravelBoleto\Contracts\Boleto\BoletoAPI as BoletoAPIContract;
-use Eduardokum\LaravelBoleto\Contracts\Pessoa as PessoaContract;
-use Eduardokum\LaravelBoleto\Pessoa;
-use Eduardokum\LaravelBoleto\Util;
+use LeonardoMax\LaravelBoleto\Contracts\Boleto\BoletoAPI as BoletoAPIContract;
+use LeonardoMax\LaravelBoleto\Contracts\Pessoa as PessoaContract;
+use LeonardoMax\LaravelBoleto\Pessoa;
+use LeonardoMax\LaravelBoleto\Util;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 

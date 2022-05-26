@@ -1,10 +1,10 @@
 <?php
 
-use Eduardokum\LaravelBoleto\Boleto\Banco\Inter;
+use LeonardoMax\LaravelBoleto\Boleto\Banco\Inter;
 
 require 'autoload.php';
 
-$beneficiario = new \Eduardokum\LaravelBoleto\Pessoa(
+$beneficiario = new \LeonardoMax\LaravelBoleto\Pessoa(
     [
         'nome' => 'ACME',
         'endereco' => 'Rua um, 123',
@@ -15,7 +15,7 @@ $beneficiario = new \Eduardokum\LaravelBoleto\Pessoa(
     ]
 );
 
-$api = new Eduardokum\LaravelBoleto\Api\Banco\Inter([
+$api = new LeonardoMax\LaravelBoleto\Api\Banco\Inter([
     'conta'            => '123456789',
     'certificado'      => realpath(__DIR__ . '/certs/') . DIRECTORY_SEPARATOR . 'cert.crt',
     'certificadoChave' => realpath(__DIR__ . '/certs/') . DIRECTORY_SEPARATOR . 'key.key',
@@ -32,6 +32,6 @@ if ($list = $retorno->body->content) {
     }
 }
 
-$pdf = new Eduardokum\LaravelBoleto\Boleto\Render\Pdf();
+$pdf = new LeonardoMax\LaravelBoleto\Boleto\Render\Pdf();
 $pdf->addBoletos($boletos);
 $pdf->gerarBoleto($pdf::OUTPUT_SAVE, __DIR__ . DIRECTORY_SEPARATOR . 'arquivos' . DIRECTORY_SEPARATOR . 'inter_lista.pdf');
