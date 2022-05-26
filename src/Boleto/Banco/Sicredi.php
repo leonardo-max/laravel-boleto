@@ -1,10 +1,10 @@
 <?php
-namespace LeonardoMax\LaravelBoleto\Boleto\Banco;
+namespace LaravelBoleto\Boleto\Banco;
 
-use LeonardoMax\LaravelBoleto\Boleto\AbstractBoleto;
-use LeonardoMax\LaravelBoleto\CalculoDV;
-use LeonardoMax\LaravelBoleto\Contracts\Boleto\Boleto as BoletoContract;
-use LeonardoMax\LaravelBoleto\Util;
+use LaravelBoleto\Boleto\AbstractBoleto;
+use LaravelBoleto\CalculoDV;
+use LaravelBoleto\Contracts\Boleto\Boleto as BoletoContract;
+use LaravelBoleto\Util;
 
 class Sicredi extends AbstractBoleto implements BoletoContract
 {

@@ -1,7 +1,7 @@
 <?php
 require 'autoload.php';
 
-$retorno = \LeonardoMax\LaravelBoleto\Cnab\Retorno\Factory::make(__DIR__ . DIRECTORY_SEPARATOR . 'arquivos' . DIRECTORY_SEPARATOR . 'sicredi.ret');
+$retorno = \LaravelBoleto\Cnab\Retorno\Factory::make(__DIR__ . DIRECTORY_SEPARATOR . 'arquivos' . DIRECTORY_SEPARATOR . 'sicredi.ret');
 $retorno->processar();
 
 echo $retorno->getBancoNome();

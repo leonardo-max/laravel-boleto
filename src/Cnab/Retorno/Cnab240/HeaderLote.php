@@ -1,10 +1,10 @@
 <?php
 
-namespace LeonardoMax\LaravelBoleto\Cnab\Retorno\Cnab240;
+namespace LaravelBoleto\Cnab\Retorno\Cnab240;
 
 use Carbon\Carbon;
-use LeonardoMax\LaravelBoleto\Contracts\Cnab\Retorno\Cnab240\HeaderLote as HeaderLoteContract;
-use LeonardoMax\LaravelBoleto\MagicTrait;
+use LaravelBoleto\Contracts\Cnab\Retorno\Cnab240\HeaderLote as HeaderLoteContract;
+use LaravelBoleto\MagicTrait;
 
 class HeaderLote implements HeaderLoteContract
 {

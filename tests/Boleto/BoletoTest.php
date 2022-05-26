@@ -1,11 +1,11 @@
 <?php
 
-namespace LeonardoMax\LaravelBoleto\Tests\Boleto;
+namespace LaravelBoleto\Tests\Boleto;
 
-use LeonardoMax\LaravelBoleto\Boleto\Banco as Boleto;
-use LeonardoMax\LaravelBoleto\Boleto\Render\Pdf;
-use LeonardoMax\LaravelBoleto\Pessoa;
-use LeonardoMax\LaravelBoleto\Tests\TestCase;
+use LaravelBoleto\Boleto\Banco as Boleto;
+use LaravelBoleto\Boleto\Render\Pdf;
+use LaravelBoleto\Pessoa;
+use LaravelBoleto\Tests\TestCase;
 use Exception;
 
 class BoletoTest extends TestCase

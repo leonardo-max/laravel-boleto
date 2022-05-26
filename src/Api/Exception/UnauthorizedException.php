@@ -1,5 +1,5 @@
 <?php
-namespace LeonardoMax\LaravelBoleto\Api\Exception;
+namespace LaravelBoleto\Api\Exception;
 
 use Exception;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace LeonardoMax\LaravelBoleto\Contracts\Cnab\Retorno\Cnab240;
+namespace LaravelBoleto\Contracts\Cnab\Retorno\Cnab240;
 
 interface TrailerLote
 {

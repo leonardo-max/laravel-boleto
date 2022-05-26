@@ -1,6 +1,6 @@
 <?php
 require 'autoload.php';
-$beneficiario = new \LeonardoMax\LaravelBoleto\Pessoa(
+$beneficiario = new \LaravelBoleto\Pessoa(
     [
         'nome'      => 'ACME',
         'endereco'  => 'Rua um, 123',
@@ -11,7 +11,7 @@ $beneficiario = new \LeonardoMax\LaravelBoleto\Pessoa(
     ]
 );
 
-$pagador = new \LeonardoMax\LaravelBoleto\Pessoa(
+$pagador = new \LaravelBoleto\Pessoa(
     [
         'nome'      => 'Cliente',
         'endereco'  => 'Rua um, 123',
@@ -23,7 +23,7 @@ $pagador = new \LeonardoMax\LaravelBoleto\Pessoa(
     ]
 );
 
-$boleto = new LeonardoMax\LaravelBoleto\Boleto\Banco\Sicredi(
+$boleto = new LaravelBoleto\Boleto\Banco\Sicredi(
     [
         'logo'                   => realpath(__DIR__ . '/../logos/') . DIRECTORY_SEPARATOR . '748.png',
         'dataVencimento'         => new \Carbon\Carbon(),
@@ -47,7 +47,7 @@ $boleto = new LeonardoMax\LaravelBoleto\Boleto\Banco\Sicredi(
     ]
 );
 
-$remessa = new \LeonardoMax\LaravelBoleto\Cnab\Remessa\Cnab400\Banco\Sicredi(
+$remessa = new \LaravelBoleto\Cnab\Remessa\Cnab400\Banco\Sicredi(
     [
         'agencia'      => 2606,
         'carteira'     => '1',

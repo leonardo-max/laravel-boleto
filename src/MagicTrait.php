@@ -1,5 +1,5 @@
 <?php
-namespace LeonardoMax\LaravelBoleto;
+namespace LaravelBoleto;
 
 use Illuminate\Support\Str;
 

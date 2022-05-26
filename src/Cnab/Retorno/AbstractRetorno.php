@@ -6,16 +6,16 @@
  * Time: 07:31
  */
 
-namespace LeonardoMax\LaravelBoleto\Cnab\Retorno;
+namespace LaravelBoleto\Cnab\Retorno;
 
-use LeonardoMax\LaravelBoleto\Contracts\Cnab\Retorno\Cnab240\Detalhe as Detalhe240Contract;
-use LeonardoMax\LaravelBoleto\Contracts\Cnab\Retorno\Cnab240\Header as Header240Contract;
-use LeonardoMax\LaravelBoleto\Contracts\Cnab\Retorno\Cnab240\Trailer as Trailer240Contract;
-use LeonardoMax\LaravelBoleto\Contracts\Cnab\Retorno\Cnab400\Detalhe as Detalhe400Contract;
-use LeonardoMax\LaravelBoleto\Contracts\Cnab\Retorno\Cnab400\Trailer as Trailer400Contract;
-use LeonardoMax\LaravelBoleto\Contracts\Cnab\Retorno\Cnab400\Header as Header400Contract;
+use LaravelBoleto\Contracts\Cnab\Retorno\Cnab240\Detalhe as Detalhe240Contract;
+use LaravelBoleto\Contracts\Cnab\Retorno\Cnab240\Header as Header240Contract;
+use LaravelBoleto\Contracts\Cnab\Retorno\Cnab240\Trailer as Trailer240Contract;
+use LaravelBoleto\Contracts\Cnab\Retorno\Cnab400\Detalhe as Detalhe400Contract;
+use LaravelBoleto\Contracts\Cnab\Retorno\Cnab400\Trailer as Trailer400Contract;
+use LaravelBoleto\Contracts\Cnab\Retorno\Cnab400\Header as Header400Contract;
 use Illuminate\Support\Collection;
-use LeonardoMax\LaravelBoleto\Util;
+use LaravelBoleto\Util;
 
 abstract class AbstractRetorno implements \Countable, \SeekableIterator
 {
@@ -87,7 +87,7 @@ abstract class AbstractRetorno implements \Countable, \SeekableIterator
             throw new \Exception("Arquivo: não existe");
         }
 
-        $r = new \ReflectionClass('\LeonardoMax\LaravelBoleto\Contracts\Boleto\Boleto');
+        $r = new \ReflectionClass('\LaravelBoleto\Contracts\Boleto\Boleto');
         $constantNames = $r->getConstants();
         $bancosDisponiveis = [];
         foreach ($constantNames as $constantName => $codigoBanco) {

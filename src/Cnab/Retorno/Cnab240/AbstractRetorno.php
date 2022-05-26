@@ -1,19 +1,19 @@
 <?php
-namespace LeonardoMax\LaravelBoleto\Cnab\Retorno\Cnab240;
+namespace LaravelBoleto\Cnab\Retorno\Cnab240;
 
-use \LeonardoMax\LaravelBoleto\Cnab\Retorno\AbstractRetorno as AbstractRetornoGeneric;
-use LeonardoMax\LaravelBoleto\Contracts\Cnab\Retorno\Cnab240\HeaderLote as HeaderLoteContract;
-use LeonardoMax\LaravelBoleto\Contracts\Cnab\Retorno\Cnab240\TrailerLote as TrailerLoteContract;
+use \LaravelBoleto\Cnab\Retorno\AbstractRetorno as AbstractRetornoGeneric;
+use LaravelBoleto\Contracts\Cnab\Retorno\Cnab240\HeaderLote as HeaderLoteContract;
+use LaravelBoleto\Contracts\Cnab\Retorno\Cnab240\TrailerLote as TrailerLoteContract;
 use Illuminate\Support\Collection;
 
 /**
  * Class AbstractRetorno
  *
- * @method  \LeonardoMax\LaravelBoleto\Cnab\Retorno\Cnab240\Detalhe getDetalhe($i)
- * @method  \LeonardoMax\LaravelBoleto\Cnab\Retorno\Cnab240\Header getHeader()
- * @method  \LeonardoMax\LaravelBoleto\Cnab\Retorno\Cnab240\Trailer getTrailer()
- * @method  \LeonardoMax\LaravelBoleto\Cnab\Retorno\Cnab240\Detalhe detalheAtual()
- * @package LeonardoMax\LaravelBoleto\Cnab\Retorno\Cnab240
+ * @method  \LaravelBoleto\Cnab\Retorno\Cnab240\Detalhe getDetalhe($i)
+ * @method  \LaravelBoleto\Cnab\Retorno\Cnab240\Header getHeader()
+ * @method  \LaravelBoleto\Cnab\Retorno\Cnab240\Trailer getTrailer()
+ * @method  \LaravelBoleto\Cnab\Retorno\Cnab240\Detalhe detalheAtual()
+ * @package LaravelBoleto\Cnab\Retorno\Cnab240
  */
 abstract class AbstractRetorno extends AbstractRetornoGeneric
 {

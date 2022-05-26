@@ -1,10 +1,10 @@
 <?php
-namespace LeonardoMax\LaravelBoleto\Cnab\Remessa\Cnab400\Banco;
+namespace LaravelBoleto\Cnab\Remessa\Cnab400\Banco;
 
-use LeonardoMax\LaravelBoleto\Cnab\Remessa\Cnab400\AbstractRemessa;
-use LeonardoMax\LaravelBoleto\Contracts\Boleto\Boleto as BoletoContract;
-use LeonardoMax\LaravelBoleto\Contracts\Cnab\Remessa as RemessaContract;
-use LeonardoMax\LaravelBoleto\Util;
+use LaravelBoleto\Cnab\Remessa\Cnab400\AbstractRemessa;
+use LaravelBoleto\Contracts\Boleto\Boleto as BoletoContract;
+use LaravelBoleto\Contracts\Cnab\Remessa as RemessaContract;
+use LaravelBoleto\Util;
 
 class Caixa  extends AbstractRemessa implements RemessaContract
 {

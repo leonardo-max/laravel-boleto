@@ -1,12 +1,12 @@
 <?php
 
-namespace LeonardoMax\LaravelBoleto\Cnab\Retorno\Cnab240;
+namespace LaravelBoleto\Cnab\Retorno\Cnab240;
 
 use Carbon\Carbon;
-use LeonardoMax\LaravelBoleto\Contracts\Cnab\Retorno\Cnab240\Detalhe as DetalheContract;
-use LeonardoMax\LaravelBoleto\Contracts\Pessoa as PessoaContract;
-use LeonardoMax\LaravelBoleto\MagicTrait;
-use LeonardoMax\LaravelBoleto\Util;
+use LaravelBoleto\Contracts\Cnab\Retorno\Cnab240\Detalhe as DetalheContract;
+use LaravelBoleto\Contracts\Pessoa as PessoaContract;
+use LaravelBoleto\MagicTrait;
+use LaravelBoleto\Util;
 use Exception;
 
 class Detalhe implements DetalheContract

@@ -1,10 +1,10 @@
 <?php
-namespace LeonardoMax\LaravelBoleto\Cnab\Remessa;
+namespace LaravelBoleto\Cnab\Remessa;
 
 use Carbon\Carbon;
-use LeonardoMax\LaravelBoleto\Util;
-use LeonardoMax\LaravelBoleto\Contracts\Pessoa as PessoaContract;
-use LeonardoMax\LaravelBoleto\Contracts\Boleto\Boleto as BoletoContract;
+use LaravelBoleto\Util;
+use LaravelBoleto\Contracts\Pessoa as PessoaContract;
+use LaravelBoleto\Contracts\Boleto\Boleto as BoletoContract;
 use Illuminate\Support\Str;
 
 abstract class AbstractRemessa

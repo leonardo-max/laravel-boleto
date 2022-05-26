@@ -1,21 +1,21 @@
 <?php
-namespace LeonardoMax\LaravelBoleto\Cnab\Retorno\Cnab400;
+namespace LaravelBoleto\Cnab\Retorno\Cnab400;
 
-use LeonardoMax\LaravelBoleto\Util;
-use \LeonardoMax\LaravelBoleto\Cnab\Retorno\AbstractRetorno as AbstractRetornoGeneric;
-use LeonardoMax\LaravelBoleto\Contracts\Cnab\Retorno\Cnab400\Header as HeaderContract;
-use LeonardoMax\LaravelBoleto\Contracts\Cnab\Retorno\Cnab400\Detalhe as DetalheContract;
-use LeonardoMax\LaravelBoleto\Contracts\Cnab\Retorno\Cnab400\Trailer as TrailerContract;
+use LaravelBoleto\Util;
+use \LaravelBoleto\Cnab\Retorno\AbstractRetorno as AbstractRetornoGeneric;
+use LaravelBoleto\Contracts\Cnab\Retorno\Cnab400\Header as HeaderContract;
+use LaravelBoleto\Contracts\Cnab\Retorno\Cnab400\Detalhe as DetalheContract;
+use LaravelBoleto\Contracts\Cnab\Retorno\Cnab400\Trailer as TrailerContract;
 use Illuminate\Support\Collection;
 
 /**
  * Class AbstractRetorno
  *
- * @method  \LeonardoMax\LaravelBoleto\Cnab\Retorno\Cnab400\Detalhe getDetalhe($i)
- * @method  \LeonardoMax\LaravelBoleto\Cnab\Retorno\Cnab400\Header getHeader()
- * @method  \LeonardoMax\LaravelBoleto\Cnab\Retorno\Cnab400\Trailer getTrailer()
- * @method  \LeonardoMax\LaravelBoleto\Cnab\Retorno\Cnab400\Detalhe detalheAtual()
- * @package LeonardoMax\LaravelBoleto\Cnab\Retorno\Cnab400
+ * @method  \LaravelBoleto\Cnab\Retorno\Cnab400\Detalhe getDetalhe($i)
+ * @method  \LaravelBoleto\Cnab\Retorno\Cnab400\Header getHeader()
+ * @method  \LaravelBoleto\Cnab\Retorno\Cnab400\Trailer getTrailer()
+ * @method  \LaravelBoleto\Cnab\Retorno\Cnab400\Detalhe detalheAtual()
+ * @package LaravelBoleto\Cnab\Retorno\Cnab400
  */
 abstract class AbstractRetorno extends AbstractRetornoGeneric
 {

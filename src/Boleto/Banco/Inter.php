@@ -1,11 +1,11 @@
 <?php
-namespace LeonardoMax\LaravelBoleto\Boleto\Banco;
+namespace LaravelBoleto\Boleto\Banco;
 
 use Carbon\Carbon;
-use LeonardoMax\LaravelBoleto\Boleto\AbstractBoleto;
-use LeonardoMax\LaravelBoleto\Contracts\Boleto\BoletoAPI as BoletoAPIContract;
-use LeonardoMax\LaravelBoleto\Contracts\Boleto\Boleto;
-use LeonardoMax\LaravelBoleto\Util;
+use LaravelBoleto\Boleto\AbstractBoleto;
+use LaravelBoleto\Contracts\Boleto\BoletoAPI as BoletoAPIContract;
+use LaravelBoleto\Contracts\Boleto\Boleto;
+use LaravelBoleto\Util;
 use Illuminate\Support\Arr;
 
 class Inter extends AbstractBoleto implements BoletoAPIContract

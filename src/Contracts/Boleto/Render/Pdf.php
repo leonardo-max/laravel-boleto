@@ -1,5 +1,5 @@
 <?php
-namespace LeonardoMax\LaravelBoleto\Contracts\Boleto\Render;
+namespace LaravelBoleto\Contracts\Boleto\Render;
 
 interface Pdf
 {

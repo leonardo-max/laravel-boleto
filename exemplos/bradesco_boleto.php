@@ -1,6 +1,6 @@
 <?php
 require 'autoload.php';
-$beneficiario = new \LeonardoMax\LaravelBoleto\Pessoa(
+$beneficiario = new \LaravelBoleto\Pessoa(
     [
     'nome' => 'ACME',
     'endereco' => 'Rua um, 123',
@@ -11,7 +11,7 @@ $beneficiario = new \LeonardoMax\LaravelBoleto\Pessoa(
     ]
 );
 
-$pagador = new \LeonardoMax\LaravelBoleto\Pessoa(
+$pagador = new \LaravelBoleto\Pessoa(
     [
     'nome' => 'Cliente',
     'endereco' => 'Rua um, 123',
@@ -23,7 +23,7 @@ $pagador = new \LeonardoMax\LaravelBoleto\Pessoa(
     ]
 );
 
-$boleto = new LeonardoMax\LaravelBoleto\Boleto\Banco\Bradesco(
+$boleto = new LaravelBoleto\Boleto\Banco\Bradesco(
     [
     'logo' => realpath(__DIR__ . '/../logos/') . DIRECTORY_SEPARATOR . '237.png',
     'dataVencimento' => new \Carbon\Carbon(),
@@ -44,6 +44,6 @@ $boleto = new LeonardoMax\LaravelBoleto\Boleto\Banco\Bradesco(
     ]
 );
 
-$pdf = new LeonardoMax\LaravelBoleto\Boleto\Render\Pdf();
+$pdf = new LaravelBoleto\Boleto\Render\Pdf();
 $pdf->addBoleto($boleto);
 $pdf->gerarBoleto($pdf::OUTPUT_SAVE, __DIR__ . DIRECTORY_SEPARATOR . 'arquivos' . DIRECTORY_SEPARATOR . 'bradesco.pdf');

@@ -1,9 +1,9 @@
 <?php
-namespace LeonardoMax\LaravelBoleto\Cnab\Retorno;
+namespace LaravelBoleto\Cnab\Retorno;
 
-use LeonardoMax\LaravelBoleto\Contracts\Boleto\Boleto as BoletoContract;
-use LeonardoMax\LaravelBoleto\Contracts\Cnab\Retorno;
-use LeonardoMax\LaravelBoleto\Util;
+use LaravelBoleto\Contracts\Boleto\Boleto as BoletoContract;
+use LaravelBoleto\Contracts\Cnab\Retorno;
+use LaravelBoleto\Util;
 
 class Factory
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace LeonardoMax\LaravelBoleto\Boleto\Render;
+namespace LaravelBoleto\Boleto\Render;
 
-use LeonardoMax\LaravelBoleto\Contracts\Boleto\Boleto as BoletoContract;
-use LeonardoMax\LaravelBoleto\Contracts\Boleto\Render\Pdf as PdfContract;
-use LeonardoMax\LaravelBoleto\Util;
+use LaravelBoleto\Contracts\Boleto\Boleto as BoletoContract;
+use LaravelBoleto\Contracts\Boleto\Render\Pdf as PdfContract;
+use LaravelBoleto\Util;
 use Illuminate\Support\Str;
 
 class Pdf extends AbstractPdf implements PdfContract

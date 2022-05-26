@@ -1,5 +1,5 @@
 <?php
-namespace LeonardoMax\LaravelBoleto\Contracts\Cnab\Retorno\Cnab400;
+namespace LaravelBoleto\Contracts\Cnab\Retorno\Cnab400;
 
 interface Header
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace LeonardoMax\LaravelBoleto\Tests\Remessa;
+namespace LaravelBoleto\Tests\Remessa;
 
-use LeonardoMax\LaravelBoleto\Boleto\Banco as Boleto;
-use LeonardoMax\LaravelBoleto\Cnab\Remessa\Cnab240\Banco as Remessa;
-use LeonardoMax\LaravelBoleto\Pessoa;
-use LeonardoMax\LaravelBoleto\Tests\TestCase;
+use LaravelBoleto\Boleto\Banco as Boleto;
+use LaravelBoleto\Cnab\Remessa\Cnab240\Banco as Remessa;
+use LaravelBoleto\Pessoa;
+use LaravelBoleto\Tests\TestCase;
 
 class RemessaCnab240Test extends TestCase
 {

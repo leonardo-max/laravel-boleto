@@ -1,5 +1,5 @@
 <?php
-namespace LeonardoMax\LaravelBoleto\Tests;
+namespace LaravelBoleto\Tests;
 
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
 use PHPUnit\Framework\Constraint\IsType;

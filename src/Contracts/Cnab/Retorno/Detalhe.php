@@ -1,6 +1,6 @@
 <?php
 
-namespace LeonardoMax\LaravelBoleto\Contracts\Cnab\Retorno;
+namespace LaravelBoleto\Contracts\Cnab\Retorno;
 
 interface Detalhe
 {

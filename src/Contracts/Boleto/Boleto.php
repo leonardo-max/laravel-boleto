@@ -1,7 +1,7 @@
 <?php
-namespace LeonardoMax\LaravelBoleto\Contracts\Boleto;
+namespace LaravelBoleto\Contracts\Boleto;
 
-use LeonardoMax\LaravelBoleto\Contracts\Pessoa as PessoaContract;
+use LaravelBoleto\Contracts\Pessoa as PessoaContract;
 
 interface Boleto
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace LeonardoMax\LaravelBoleto\Cnab\Retorno\Cnab240\Banco;
+namespace LaravelBoleto\Cnab\Retorno\Cnab240\Banco;
 
-use LeonardoMax\LaravelBoleto\Cnab\Retorno\Cnab240\AbstractRetorno;
-use LeonardoMax\LaravelBoleto\Contracts\Boleto\Boleto as BoletoContract;
-use LeonardoMax\LaravelBoleto\Contracts\Cnab\RetornoCnab240;
-use LeonardoMax\LaravelBoleto\Util;
+use LaravelBoleto\Cnab\Retorno\Cnab240\AbstractRetorno;
+use LaravelBoleto\Contracts\Boleto\Boleto as BoletoContract;
+use LaravelBoleto\Contracts\Cnab\RetornoCnab240;
+use LaravelBoleto\Util;
 use Illuminate\Support\Arr;
 
 class Bancoob extends AbstractRetorno implements RetornoCnab240

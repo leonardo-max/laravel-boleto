@@ -1,10 +1,10 @@
 <?php
 
-namespace LeonardoMax\LaravelBoleto\Cnab\Retorno\Cnab400;
+namespace LaravelBoleto\Cnab\Retorno\Cnab400;
 
 use Carbon\Carbon;
-use LeonardoMax\LaravelBoleto\MagicTrait;
-use LeonardoMax\LaravelBoleto\Contracts\Cnab\Retorno\Cnab400\Detalhe as DetalheContract;
+use LaravelBoleto\MagicTrait;
+use LaravelBoleto\Contracts\Cnab\Retorno\Cnab400\Detalhe as DetalheContract;
 
 class Detalhe implements DetalheContract
 {

@@ -6,13 +6,13 @@
  * Time: 14:02
  */
 
-namespace LeonardoMax\LaravelBoleto\Cnab\Remessa\Cnab240\Banco;
+namespace LaravelBoleto\Cnab\Remessa\Cnab240\Banco;
 
-use LeonardoMax\LaravelBoleto\CalculoDV;
-use LeonardoMax\LaravelBoleto\Cnab\Remessa\Cnab240\AbstractRemessa;
-use LeonardoMax\LaravelBoleto\Contracts\Boleto\Boleto as BoletoContract;
-use LeonardoMax\LaravelBoleto\Contracts\Cnab\Remessa as RemessaContract;
-use LeonardoMax\LaravelBoleto\Util;
+use LaravelBoleto\CalculoDV;
+use LaravelBoleto\Cnab\Remessa\Cnab240\AbstractRemessa;
+use LaravelBoleto\Contracts\Boleto\Boleto as BoletoContract;
+use LaravelBoleto\Contracts\Cnab\Remessa as RemessaContract;
+use LaravelBoleto\Util;
 
 class Itau extends AbstractRemessa implements RemessaContract
 {

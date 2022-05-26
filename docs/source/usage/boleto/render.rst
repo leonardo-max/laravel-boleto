@@ -39,7 +39,7 @@ Render multiple
 
 .. code-block:: php
 
-    $pdf = new LeonardoMax\LaravelBoleto\Boleto\Render\Pdf();
+    $pdf = new LaravelBoleto\Boleto\Render\Pdf();
 
     // Add as many bills as you want.
     $pdf->addBoleto($boleto);
@@ -98,7 +98,7 @@ Render multiple
 
 .. code-block:: php
 
-    $html = new LeonardoMax\LaravelBoleto\Boleto\Render\Html();
+    $html = new LaravelBoleto\Boleto\Render\Html();
 
     // Add as many bills as you want
     $html->addBoleto($boleto);
