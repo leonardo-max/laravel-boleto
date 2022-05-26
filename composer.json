@@ -27,13 +27,12 @@
         "orchestra/testbench": "^3.1"
     },
     "autoload": {
-        "psr-4": {
-            "leonardo-max\\LaravelBoleto\\": "src"
-        }
+        "psr-4": {"LaravelBoleto\\": "src/"},
+        "psr-0": {"LaravelBoleto\\": "src/"}
     },
     "autoload-dev": {
         "psr-4": {
-            "leonardo-max\\LaravelBoleto\\Tests\\": "tests"
+            "LaravelBoleto\\Tests\\": "tests"
         }
     },
     "config": {
