@@ -495,6 +495,18 @@ final class Util
     }
 
     /**
+     * Fator de vencimento do código de barras (posições 6 a 9).
+     *
+     * São os dias corridos desde a data-base 07/10/1997, em 4 dígitos, de 1000
+     * a 9999. Pela regra da FEBRABAN, o fator chegou a 9999 em 21/02/2025 e
+     * recomeçou em 1000 em 22/02/2025: a cada 9000 dias o ciclo se repete.
+     * Antes desta correção o fator seguia contando (10656 em 2026), o código
+     * de barras saía com 45 dígitos e a linha digitável não batia com a do banco.
+     *
+     * A conta é feita só com o dia do calendário (sem hora nem fuso): no
+     * Carbon 3 o `diffInDays` devolve fração quando a data traz hora, e o ponto
+     * ia parar no código de barras.
+     *
      * @param        Carbon|string $date
      * @param string               $format
      *
@@ -504,7 +516,28 @@ final class Util
     public static function fatorVencimento($date, $format = 'Y-m-d')
     {
         $date = ($date instanceof Carbon) ? $date : Carbon::createFromFormat($format, $date)->setTime(0, 0, 0);
-        return (new Carbon('1997-10-07'))->diffInDays($date);
+        $dias = self::diasDesdeDataBaseFatorVencimento($date);
+
+        if ($dias < 1000) {
+            throw new \Exception('Data de vencimento anterior a 03/07/2000 não tem fator de vencimento: ' . $date->format('d/m/Y'));
+        }
+
+        return (($dias - 1000) % 9000) + 1000;
+    }
+
+    /**
+     * Dias corridos entre 07/10/1997 e o dia do calendário de $date.
+     *
+     * @param Carbon $date
+     *
+     * @return integer
+     */
+    private static function diasDesdeDataBaseFatorVencimento($date)
+    {
+        $base = gmmktime(0, 0, 0, 10, 7, 1997);
+        $dia = gmmktime(0, 0, 0, (int) $date->format('n'), (int) $date->format('j'), (int) $date->format('Y'));
+
+        return (int) round(($dia - $base) / 86400);
     }
 
     /**
@@ -521,14 +554,33 @@ final class Util
     }
 
     /**
-     * @param        $factor
-     * @param string $format
+     * Data de vencimento a partir do fator (o inverso de fatorVencimento).
      *
-     * @return bool|string
+     * Desde 22/02/2025 o mesmo fator volta a cada 9000 dias (1000 é 03/07/2000
+     * e também 22/02/2025), então o fator sozinho não diz a data: vale o ciclo
+     * mais próximo da data de referência — hoje, se nada for passado. Fator
+     * abaixo de 1000 (0000 = boleto sem vencimento) não tem ciclo e é contado
+     * direto da data-base, como antes.
+     *
+     * @param  int|string         $factor
+     * @param  string|false       $format
+     * @param  Carbon|string|null $referencia
+     *
+     * @return Carbon|string
      */
-    public static function fatorVencimentoBack($factor, $format = 'Y-m-d')
+    public static function fatorVencimentoBack($factor, $format = 'Y-m-d', $referencia = null)
     {
-        $date = Carbon::create(1997, 10, 7, 0, 0, 0)->addDays($factor);
+        $dias = (int) $factor;
+
+        if ($dias >= 1000) {
+            if (!$referencia instanceof Carbon) {
+                $referencia = $referencia ? Carbon::parse($referencia) : Carbon::now();
+            }
+            $ciclo = (int) round((self::diasDesdeDataBaseFatorVencimento($referencia) - $dias) / 9000);
+            $dias += max(0, $ciclo) * 9000;
+        }
+
+        $date = Carbon::create(1997, 10, 7, 0, 0, 0)->addDays($dias);
         return $format ? $date->format($format) : $date;
     }
 
